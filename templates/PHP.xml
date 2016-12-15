@@ -1,0 +1,38 @@
+<templateSet group="PHP">
+  <template name="thr" value="throw new $END$" description="throw new " toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="php" value="&lt;?php $name$ ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if($name$){&#10;$value$&#10;}" description="if conditions" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for ($x = 0; $x &lt;= 10; $x++) {&#10;    echo &quot;The number is: $x &lt;br&gt;&quot;;&#10;} " description="for php" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="echo" value="echo '$END$';" description="'echo' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="=" value="echo '$STRING$';&#10;$END$" description="echo" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

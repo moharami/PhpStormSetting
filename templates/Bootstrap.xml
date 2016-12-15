@@ -1,0 +1,7 @@
+<templateSet group="Bootstrap">
+  <template name="pinfo" value="&lt;div class=&quot;panel panel-info&quot;&gt;&#10;    &lt;div class=&quot;panel-heading&quot;&gt;&#10;        &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;panel-body&quot;&gt; Panel content&lt;/div&gt;&#10;&lt;/div&gt;" description="panel-info" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

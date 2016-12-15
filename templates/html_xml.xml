@@ -1,0 +1,62 @@
+<templateSet group="html/xml">
+  <template name="t" value="&lt;$TAG$&gt;$END$&lt;/$TAG_NAME$&gt;" description="Tag pair" toReformat="true" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTRS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="false" />
+    <variable name="TAG_NAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="T" value="&lt;$TAG$&gt;$SELECTION$&lt;/$TAGNAME$&gt;&#10;" description="Surround with &lt;tag&gt;&lt;/tag&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="TAGNAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="T2" value="&lt;$TAG$&gt;$SELECTION$&lt;/$TAGNAME$&gt;" description="Surround with &lt;tag&gt;&lt;/tag&gt; in HTML/JSP" toReformat="false" toShortenFQNames="false">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="TAGNAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSX_HTML" value="true" />
+    </context>
+  </template>
+  <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="onclick" value="onclick=&quot;return confirm('Are you sure?')&quot;" description="Onclick" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="panel" value="&lt;div class=&quot;panel panel-default&quot;&gt;&#10;  &lt;div class=&quot;panel-heading&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;panel-body&quot;&gt;&#10;    &#10;    &#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Bootstrap Panel" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="if" value="&lt;?php if() : ?&gt;&#10;&#10;&lt;?php endif; ?&gt;" description="&lt;?php if(): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="&lt;?php foreach($ITERABLE$ as $KEY$=&gt;$VAR_VALUE$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="forech" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="&quot;$key&quot;" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="=" value="&lt;?=  $END$ ?&gt;" description="echo" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
