@@ -45,7 +45,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="l" value="$logs = $this-&gt;FoodList-&gt;getDataSource()-&gt;getLog(false,false);&#10;debug($logs);&#10;die();" description="log Query" toReformat="false" toShortenFQNames="true">
+  <template name="l" value="$logs = $this-&gt;{$this-&gt;modelClass}-&gt;getDataSource()-&gt;getLog(false,false);&#10;debug($logs);&#10;die();" description="log Query" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
