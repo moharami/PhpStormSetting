@@ -5,7 +5,10 @@
   <action id="CompareTwoFiles" />
   <action id="DatabaseView.CopyAction" />
   <action id="Diff.ShowDiff" />
-  <action id="EditorDuplicate" />
+  <action id="Diff.ShowSettingsPopup" />
+  <action id="EditorDuplicate">
+    <keyboard-shortcut first-keystroke="shift ctrl d" />
+  </action>
   <action id="EditorSelectWord" />
   <action id="ExpressionTypeInfo" />
   <action id="FileChooser.GotoDesktop" />
@@ -44,6 +47,7 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
+  <action id="Uml.ShowDiff" />
   <action id="XDebugger.CopyWatch" />
   <action id="openAssertEqualsDiff" />
   <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.CyclicSplitLayoutChangeAction" />
