@@ -4,15 +4,12 @@
     <variable name="TAGNAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
     <context>
       <option name="XSL_TEXT" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false">
     <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
-      <option name="HTML" value="true" />
       <option name="XSL_TEXT" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="onclick" value="onclick=&quot;return confirm('Are you sure?')&quot;" description="Onclick" toReformat="false" toShortenFQNames="true">
@@ -27,8 +24,8 @@
   </template>
   <template name="if" value="&lt;?php if() : ?&gt;&#10;&#10;&lt;?php endif; ?&gt;" description="&lt;?php if(): ?&gt;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="PHP" value="false" />
       <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
     </context>
   </template>
   <template name="fore" value="&lt;?php foreach($ITERABLE$ as $KEY$=&gt;$VAR_VALUE$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="forech" toReformat="false" toShortenFQNames="true">
