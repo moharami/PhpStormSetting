@@ -1,5 +1,5 @@
 <templateSet group="Cakephp">
-  <template name="d" value="debug($this$);&#10;die();" description="" toReformat="false" toShortenFQNames="true">
+  <template name="d" value="debug($this$);&#10;die();" toReformat="false" toShortenFQNames="true">
     <variable name="this" expression="" defaultValue="this-&gt;request-&gt;data" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -12,7 +12,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="func" value="public function $name${&#10;$value$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="func" value="public function $name${&#10;$value$&#10;}" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -26,7 +26,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="tag" value="$this-&gt;Html-&gt;tag($name$, $text$ , $options$);" description="" toReformat="false" toShortenFQNames="true">
+  <template name="tag" value="$this-&gt;Html-&gt;tag($name$, $text$ , $options$);" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="capitalize(String)" defaultValue="$name" alwaysStopAt="true" />
     <variable name="text" expression="escapeString(String)" defaultValue="text" alwaysStopAt="true" />
     <variable name="options" expression="" defaultValue="" alwaysStopAt="true" />

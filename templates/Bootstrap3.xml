@@ -1,5 +1,6 @@
 <templateSet group="Bootstrap3">
   <template name="bs3-responsive-embed:16:9" value="&lt;!-- 16:9 aspect ratio --&gt;&#10;&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;&#10;  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;$var1$&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&#10;&lt;/div&gt;$END$" description="Responsive embed of video (16:9)" toReformat="true" toShortenFQNames="false">
     <variable name="var1" expression="" defaultValue="&quot;https://www.youtube.com/watch?v=TAvvEP3twyg&amp;list=UU_PqH6v4O6OhZdqjxM4OTvg&quot;" alwaysStopAt="true" />
+    <context />
   </template>
 </templateSet>

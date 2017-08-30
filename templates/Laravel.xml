@@ -18,17 +18,17 @@
   </template>
   <template name="htaccess" value="&lt;IfModule mod_rewrite.c&gt;&#10;    RewriteEngine on&#10;    RewriteCond %{REQUEST_URI} !^public&#10;    RewriteRule ^(.*)$ public/$1 [L]&#10;&lt;/IfModule&gt;" shortcut="TAB" description="Laravel HTACCESS file" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="HTML" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="PHP" value="false" />
-      <option name="SQL" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="meth" value=" public function $name$()&#10; {&#10; &#10; }" description="Creates new public function method" toReformat="true" toShortenFQNames="true">
@@ -90,12 +90,12 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="mailsend" value=" $data = array(&#10;            'fname' =&gt; $fname,&#10;            'lname' =&gt; $lname,&#10;            'email'     =&gt; $email,&#10;            'username'  =&gt; $username&#10;        );&#10;        // Send the email&#10;        Mail::send('emails/registration', $data, function( $message ) use ($data)&#10;        {&#10;            $message-&gt;to($data['email'])&#10;                    -&gt;from('noreply@')&#10;                    -&gt;subject('Subject Field');&#10;        });" description="" toReformat="false" toShortenFQNames="true">
+  <template name="mailsend" value=" $data = array(&#10;            'fname' =&gt; $fname,&#10;            'lname' =&gt; $lname,&#10;            'email'     =&gt; $email,&#10;            'username'  =&gt; $username&#10;        );&#10;        // Send the email&#10;        Mail::send('emails/registration', $data, function( $message ) use ($data)&#10;        {&#10;            $message-&gt;to($data['email'])&#10;                    -&gt;from('noreply@')&#10;                    -&gt;subject('Subject Field');&#10;        });" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="r::p" value="Route::post('','');" description="" toReformat="false" toShortenFQNames="true">
+  <template name="r::p" value="Route::post('','');" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
